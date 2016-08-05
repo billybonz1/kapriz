@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h3.
+        Services
+    ul
+        each service, i in servicelist
+            li#service_list_item
+                a(href="#") #{service.service}

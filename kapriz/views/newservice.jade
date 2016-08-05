@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h3= title
+    form#form_add_service(name="addservice", method="post", action="/addservice")
+        span Name
+        span &nbsp;
+        input#input_name(type="text", placeholder="service", name="service")
+        input#input_sumit(type="submit")
